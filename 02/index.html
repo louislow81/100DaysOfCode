@@ -16,84 +16,42 @@
     />
   </head>
 
-  <body class="relative padding-6 height-screen bg-gradient-preset-17 flex justify-center items-start overflow-hidden">
+  <body class="relative padding-6 height-full bg-gradient-preset-17 flex justify-center items-start overflow-hidden--">
 
-    <div class="hidden stack-1 absolute -top-10 -bottom-10 -left-10 -right-10 filter blur-10">
-      <img class="height-screen width-full object-fit object-center" src="https://i.pinimg.com/236x/41/fe/83/41fe838cc6782162633f1ea271678b57.jpg" alt="">
-    </div>
+    <overlay-blur-bg
+      url="https://i.pinimg.com/236x/41/fe/83/41fe838cc6782162633f1ea271678b57.jpg">
+    </overlay-blur-bg>
 
     <div class="stack-2 padding-8 flex (xs)flex-wrap (sm)flex-no-wrap (md)flex-no-wrap flex-center">
 
       <div class="(group) relative margin-l-4 margin-r-8 flex-shrink-0 filter saturate-6 brightness-3">
 
-        <div class="stack-3 absolute top-0 left-0 width-full">
-          <img class="-margin-t-6 -margin-l-6 (group-hover)-margin-t-10 (group-hover-margin-l-4 height-16 width-16 object-cover object-enter shadow curve-border-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZpTPYPUv5GldBF-k0KvNcw4bthklHE6AsnVQrQDP&s" alt="">
-        </div>
-        <div class="stack-2 relative curve-border-lg transform (group-hover)scale-125 transition duration-500 linear">
-          <div class="stack-2 invisible (group-hover)visible absolute width-56 height-104 bg-gradient start-transparent stop-shade-charcoal-5 start-30 stop-80 angle-90 curve-border-lg"></div>
-          <img class="stack-1 width-56 height-104 object-cover object-center shadow (group-hover)shadow-dreamy curve-border-lg cursor-pointer overflow-hidden transition duration-200 linear" src="https://image.api.playstation.com/vulcan/ap/rnd/202106/2214/8qVSk5xrtDJ2eJ2sd67KcpPW.jpg" alt="">
-        </div>
-        <div class="stack-3 absolute -top-8 -right-2 flex-column flex-gap-2 flex-wrap justify-start items-start invisible (group-hover)visible (expand)height-8 (expand)width-8 (expand)shadow (expand)curve-border-full transition duration-800 ease-in-out">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?1" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?2" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?3" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?4" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?5" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?6" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?7" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?8" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?9" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?10" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?11" alt="">
-          <img class="object-cover object-center" src="https://i.pravatar.cc/50?12" alt="">
+        <profile-avatar
+          url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZpTPYPUv5GldBF-k0KvNcw4bthklHE6AsnVQrQDP&s">
+        </profile-avatar>
 
-        </div>
+        <profile-cover
+          url="https://image.api.playstation.com/vulcan/ap/rnd/202106/2214/8qVSk5xrtDJ2eJ2sd67KcpPW.jpg"
+          followerbg="start-transparent stop-shade-amber-1">
+        </profile-cover>
+
+        <profile-followers
+          endpoint="./data/followers.json">
+        </profile-followers>
 
       </div>
 
-      <div class="margin-t-2 height-112 flex flex-wrap justify-start items-center (expand)-margin-t-4 (expand)margin-b-8 (expand)margin-r-4 (expand)width-16 (expand)height-56 (expand)bg-tint-onyx-1 (expand)shadow (expand)curve-border-lg (expand)overflow-hidden filter saturate-6 brightness-3">
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear cursor-pointer">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center " src="https://i.pinimg.com/236x/35/bc/b5/35bcb53e6bbce29984271bad1023eb64.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center" src="https://i.pinimg.com/236x/64/3e/9c/643e9c6a638e54d824a06832eba0e7b5.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center" src="https://i.pinimg.com/236x/4b/c2/8b/4bc28bc403985808434d3ea721300e63.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center" src="https://i.pinimg.com/236x/26/a4/e2/26a4e23144424671bac155c73ffb5b6c.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center" src="https://i.pinimg.com/236x/b3/20/9f/b3209f316bd68740f735841f0937275d.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="(hover)stack-5 relative width-16 height-56 transform -skew-y-24 (hover)scale-125 transition duration-200 linear">
-          <div class="absolute top-0 left-0 transform skew-y-24">
-            <img class="-margin-t-4 height-72 width-16 object-cover object-center" src="https://i.pinimg.com/236x/a8/d6/32/a8d63206abe15138281146b376813dcd.jpg" alt="">
-          </div>
-        </div>
-
-      </div>
+      <profile-artworks
+        endpoint="./data/artworks.json">
+      </profile-artworks>
 
     </div>
 
-    <script src="" type="module"></script>
+    <script src="./views/overlay-blur-bg.js" type="module"></script>
+    <script src="./views/profile-avatar.js" type="module"></script>
+    <script src="./views/profile-cover.js" type="module"></script>
+    <script src="./views/profile-followers.js" type="module"></script>
+    <script src="./views/profile-artworks.js" type="module"></script>
 
   </body>
 </html>
