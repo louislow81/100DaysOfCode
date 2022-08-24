@@ -1,0 +1,23 @@
+{
+  "name": "test-knott-project",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Louis Low <iamlouislow@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve src/index.html",
+    "watch": "parcel watch src/*",
+    "build": "parcel build src/index.html",
+    "clean": "rm -rfv ./dist/*"
+  },
+  "keywords": [
+    "web-component",
+    "virtual-dom",
+    "vanilla-js"
+  ],
+  "devDependencies": {
+    "knott": "^0.0.3",
+    "parcel-bundler": "^1.12.5",
+    "weavvcss": "*"
+  }
+}
