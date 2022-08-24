@@ -41,4 +41,4 @@ class MainApp extends HTMLElement {
     this.appendChild(template.content.cloneNode("true"));
   }
 }
-customElements.define("root-ui", MainApp);
+customElements.define("main-app", MainApp);
