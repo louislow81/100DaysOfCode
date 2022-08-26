@@ -3,12 +3,16 @@ import { craft } from "knott";
 import { followers } from "./avatars.js";
 
 // component
-const cardOne = 
+const cardOne =
   // props
-  (imageURL) => 
+  (
+    imageURL,
+    imageQuality = "200" // default
+  ) =>
   // element
   craft("div", {
     props: {
+      id: "removeCard",
       class: "relative flex flex-center bg-white",
     },
     expand: [
@@ -20,7 +24,7 @@ const cardOne =
           craft("img", {
             props: {
               class: "height-88 width-72 object-cover object-center curve-border-lg filter saturate-4 brightness-2",
-              src: imageURL,
+              src: imageURL + "?auto=compress&cs=tinysrgb&w=" + imageQuality,
               alt: "Pexels Photo"
             },
           }),
@@ -33,3 +37,5 @@ const cardOne =
 
 // export component
 export const card = cardOne;
+
+

@@ -3,7 +3,9 @@ import { craft, render, diff, mount } from "knott";
 import { card } from "./components/cards";
 import { alert } from "./components/notifications";
 
-const vRootNode = 
+import "weavvcss";
+
+const vRootNode =
   craft("body", {
     props: {
       id: "app",
@@ -15,14 +17,17 @@ const vRootNode =
       craft("div", {
         props: {
           class:
-            "flex flex-wrap flex-gap-4 flex-center (expand)height-auto (expand)width-64 (expand)shadow-lg (expand)curve-border-lg",
+            "flex flex-wrap flex-gap-4 flex-center (expand)height-auto (expand)width-64 (expand)shadow (expand)curve-border-lg",
         },
         expand: [
           // component
-          card("https://images.pexels.com/photos/1545510/pexels-photo-1545510.jpeg?auto=compress&cs=tinysrgb&w=800"),
+          card(
+            "https://images.pexels.com/photos/1545510/pexels-photo-1545510.jpeg",
+            "800" // image quality (See, cards.js)
+          ),
         ],
       }),
-      
+
     ],
   });
 

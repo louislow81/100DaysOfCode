@@ -3,7 +3,7 @@ import { craft } from "knott";
 // component
 const avatars =
   // props
-  (imageURL) => 
+  (imageURL) =>
   // element
   craft("div", {
     props: {
@@ -14,6 +14,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "1",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -21,6 +22,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "2",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -28,6 +30,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "3",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -35,6 +38,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "4",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -42,6 +46,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "5",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -49,6 +54,7 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "6",
+          loading: "lazy",
           alt: "",
         }
       }),
@@ -56,13 +62,15 @@ const avatars =
         props: {
           class: "inline-block object-cover object-center",
           src: imageURL + "7",
+          loading: "lazy",
           alt: "",
         }
       }),
     ],
   });
-  
+
 // export component
 export const followers = avatars;
+
 
 
