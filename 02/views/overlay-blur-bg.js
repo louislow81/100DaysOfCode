@@ -29,7 +29,7 @@ class OverlayBlurBg extends HTMLElement {
 
       </div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("overlay-blur-bg", OverlayBlurBg);

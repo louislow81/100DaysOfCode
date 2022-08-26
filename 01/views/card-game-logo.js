@@ -28,7 +28,7 @@ class CardGameLogo extends HTMLElement {
         </div>
       </div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("card-game-logo", CardGameLogo);

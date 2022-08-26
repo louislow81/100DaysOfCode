@@ -19,7 +19,7 @@ class CardBackgroundImageAccent extends HTMLElement {
     template.innerHTML = `
       <div class="stack-2 absolute top-6 left-0 height-64 width-full ${this.gradient} transform -skew-y-12"></div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("card-bg-image-accent", CardBackgroundImageAccent);

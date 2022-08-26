@@ -1,15 +1,25 @@
 {
   "name": "02",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "description": "",
-  "main": "index.js",
+  "author": "Louis Low <iamlouislow@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rfv ./dist/*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "web-component",
+    "virtual-dom",
+    "vanilla-js"
+  ],
   "devDependencies": {
+    "knott": "^0.0.4",
+    "vite": "^3.0.7",
     "weavvcss": "^1.0.2"
   }
 }

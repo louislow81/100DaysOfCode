@@ -1,3 +1,5 @@
+import "weavvcss";
+
 class MainApp extends HTMLElement {
   constructor() {
     super();
@@ -38,7 +40,7 @@ class MainApp extends HTMLElement {
 
       </div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("main-app", MainApp);

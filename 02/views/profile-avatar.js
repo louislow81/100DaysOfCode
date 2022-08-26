@@ -26,7 +26,7 @@ class ProfileAvatar extends HTMLElement {
         />
       </div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("profile-avatar", ProfileAvatar);

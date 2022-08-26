@@ -33,7 +33,7 @@ class CardGameDetails extends HTMLElement {
         </div>
       </div>
     `;
-    this.appendChild(template.content.cloneNode("true"));
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("card-game-details", CardGameDetails);
