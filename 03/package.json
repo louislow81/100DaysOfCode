@@ -2,15 +2,15 @@
   "name": "03",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "description": "",
   "author": "Louis Low <iamlouislow@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "gulp": "gulp",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && gulp purge-css; cp -r views/data.json dist/assets/",
     "preview": "vite preview",
-    "clean": "rm -rfv ./dist/*"
+    "clean": "rm -rfv ./dist/* ./node_modules/.vite/deps/*"
   },
   "keywords": [
     "web-component",
@@ -20,6 +20,8 @@
   "devDependencies": {
     "knott": "^0.0.4",
     "vite": "^3.0.7",
+    "gulp-purgecss": "^4.1.3",
+    "gulp": "^4.0.2",
     "weavvcss": "^1.0.2"
   }
 }
