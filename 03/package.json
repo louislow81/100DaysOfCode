@@ -18,10 +18,10 @@
     "vanilla-js"
   ],
   "devDependencies": {
-    "knott": "^0.0.4",
+    "knott": "*",
     "vite": "^3.0.7",
     "gulp-purgecss": "^4.1.3",
     "gulp": "^4.0.2",
-    "weavvcss": "^1.0.2"
+    "weavvcss": "*"
   }
 }

@@ -12,14 +12,10 @@ gulp.task("purge-css", () => {
         ],
         defaultExtractor: (content) => content.match(/[\w-/:()]+(?<!:)/g) || [],
         whitelistPatterns: [/-webkit-scrollbar-thumb$/],
-        keyframes: true,
+        keyframes: false,
       })
     )
     .pipe(gulp.dest('./dist/assets/'));
 });
 
-
-gulp.task("purge-css",
-  gulp.series("purge-css")
-);
 
