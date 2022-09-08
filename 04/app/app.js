@@ -6,14 +6,13 @@ import { skewPanel } from "./views/panels";
 import { logoHeader, stickyHeader } from "./views/headers";
 import { partnerLogos } from "./views/partners";
 import { copyrightFooter } from "./views/footers";
-import { popupModal } from "./views/modals";
 
 
 const rootNode = () => 
   craft("body", {
     props: {
       id: "root",
-      class: "relative height-screen width-full font-default flex flex-column flex-center bg-shade-onyx-4 bg-fit bg-center bg-no-repeat bg-blend-overlay",
+      class: "relative height-screen width-full font-default flex flex-column flex-center bg-shade-onyx-4 bg-cover bg-center bg-no-repeat bg-blend-overlay overflow-hidden",
       style: "background-image:url(https://images3.alphacoders.com/841/thumb-1920-841918.jpg);",
     },
     expand: [
