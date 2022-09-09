@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const stringReplace = require('gulp-replace')
 const purgeCss = require("gulp-purgecss");
 
 gulp.task("purge-css", () => {
@@ -11,11 +12,18 @@ gulp.task("purge-css", () => {
           "app/**/**/**/*.js",
         ],
         defaultExtractor: (content) => content.match(/[\w-/:()]+(?<!:)/g) || [],
-        whitelistPatterns: [/-webkit-scrollbar-thumb$/],
-        keyframes: false,
+        whitelistPatterns: [/-webkit-scrollbar-thumb$/], // enabled
+        keyframes: false, // enabled
       })
     )
     .pipe(gulp.dest("./dist/assets/"));
+});
+
+let version = (Math.random() + 1).toString(36).substring(7);
+gulp.task("app-cache-version", () => {
+  return gulp.src('./dist/sw.js')
+    .pipe(stringReplace('knott-app-cache-version', 'knott-app-' + version))
+    .pipe(gulp.dest('./dist/'))    
 });
 
 gulp.task("service-worker", () => {
@@ -41,3 +49,12 @@ gulp.task("app-manifest", () => {
     .src("./manifest.json")
     .pipe(gulp.dest("./dist/"));
 });
+
+gulp.task("post-build", gulp.series(
+  "purge-css",
+  "service-worker",
+  "app-manifest-favicon",
+  "app-favicon",
+  "app-manifest",
+  "app-cache-version"
+))

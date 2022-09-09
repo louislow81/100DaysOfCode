@@ -7,9 +7,9 @@
   "private": true,
   "scripts": {
     "gulp": "gulp",
-    "dev": "vite",
-    "build": "vite build && gulp purge-css && gulp app-manifest && gulp app-favicon && gulp app-manifest-favicon && gulp service-worker",
-    "preview": "vite preview",
+    "dev": "gulp app-cache-version && vite",
+    "build": "vite build && gulp post-build",
+    "preview": "gulp app-cache-version && vite preview --host",
     "clean": "rm -rfv ./dist/* ./node_modules/.vite/deps/*"
   },
   "keywords": [
@@ -20,9 +20,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-purgecss": "^4.1.3",
+    "gulp-replace": "^1.2.0",
     "knott": "*",
     "vite": "^3.0.7",
     "weavvcss": "*"
-  },
-  "dependencies": {}
+  }
 }
