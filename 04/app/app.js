@@ -41,4 +41,4 @@ const rootNode = () =>
 
 mount("root", render(rootNode())); // mount `main` node
 
-pwa("true"); // enable service worker to cache assets for offline access.
+pwa(true); // enable service worker to cache assets for offline access.

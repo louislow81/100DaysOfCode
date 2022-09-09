@@ -1,4 +1,4 @@
-import { craft, render, diff, mount } from "knott";
+import { craft, render, mount } from "knott";
 
 import { card } from "./components/cards";
 import { alert } from "./components/notifications";
