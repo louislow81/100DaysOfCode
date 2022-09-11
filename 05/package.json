@@ -1,0 +1,29 @@
+{
+  "name": "05",
+  "version": "0.0.0",
+  "description": "My funkadelic Knott.JS project",
+  "author": "Louis Low",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp",
+    "dev": "gulp app-cache-version && vite --host",
+    "build": "vite build && gulp post-build",
+    "preview": "gulp app-cache-version && vite preview --host",
+    "clean": "rm -rfv ./dist/* ./node_modules/.vite/deps/*"
+  },
+  "keywords": [
+    "web-component",
+    "virtual-dom",
+    "vanilla-js"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-replace": "^1.1.3",
+    "gulp-purgecss": "^4.1.3",
+    "knott": "*",
+    "vite": "^3.0.7",
+    "weavvcss": "*"
+  },
+  "dependencies": {}
+}
