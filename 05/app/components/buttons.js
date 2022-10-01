@@ -4,11 +4,11 @@ const gettingStarted = (url) =>
   craft("getting-started-container", {
     props: {
       id: "setButtonHover",
-      class: `paddingTop-80`,
+      class: `pt:80`,
     },
     html: `
       <a 
-        class="marginTop-40 paddingLeft-40 paddingRight-40 paddingTop-15 paddingBottom-15 fontSize-20 textColor-rgba(100,100,100,100) bgColor-white borderRadius-10 textDecoration-none" 
+        class="mt:40 pl:40 pr:40 pt:15 pb:15 textSize:20 textColor:rgba(100,100,100,100) bgColor:white curveRadius:10 textDeco:none" 
         href=${url} 
         target="_blank" 
         title=""
