@@ -7,18 +7,12 @@ import "weavvcss";
 
 const vRootNode =
   craft("body", {
-    props: {
-      id: "app",
-      class: "relative font-default height-screen flex flex-center bg-gradient-preset-1 antialiased",
-    },
+    props: { id: "app", class: "relative font-default height-screen flex flex-center bg-gradient-preset-1 antialiased" },
     expand: [
       // component
       alert("Build with Knott.js"),
       craft("div", {
-        props: {
-          class:
-            "flex flex-wrap flex-gap-4 flex-center (expand)height-auto (expand)width-64 (expand)shadow (expand)curve-border-lg",
-        },
+        props: { class: "flex flex-wrap flex-gap-4 flex-center (expand)height-auto (expand)width-64 (expand)shadow (expand)curve-border-lg" },
         expand: [
           // component
           card(

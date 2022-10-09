@@ -2,10 +2,7 @@ import { craft } from "knott";
 
 const avatar = craft(
   "data-loop-avatars", {
-    props: {
-      id: "idAvatars",
-      class: "stack-2 absolute -right-12 flex flex-column flex-center (expand)margin-b-2 (expand)height-10 (expand)width-10 (expand)shadow (expand)curve-border-full",
-    },
+    props: { id: "idAvatars", class: "stack-2 absolute -right-12 flex flex-column flex-center (expand)margin-b-2 (expand)height-10 (expand)width-10 (expand)shadow (expand)curve-border-full" },
   });
 
 

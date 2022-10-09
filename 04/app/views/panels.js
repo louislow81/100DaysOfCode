@@ -2,22 +2,13 @@ import { craft } from "knott";
 
 const skewPanel = (number, image1, image2) => 
   craft("div", {
-    props: {
-      class: "(group) relative padding-8 height-72 width-40 transform -skew-x-12 curve-border-lg shadow-lg-shade-charcoal-1 border-8 border-transparent (hover)border-tint-onyx-5 overflow-hidden cursor-pointer select-none",
-    },
+    props: { class: "(group) relative padding-8 height-72 width-40 transform -skew-x-12 curve-border-lg shadow-lg-shade-charcoal-1 border-8 border-transparent (hover)border-tint-onyx-5 overflow-hidden cursor-pointer select-none" },
     expand: [
       craft("div", {
-        props: {
-          class: "absolute top-0 -left-6 height-88 width-56",
-        },
+        props: { class: "absolute top-0 -left-6 height-88 width-56" },
         expand: [
           craft("img", {
-            props: {
-              class: "stack-1 inline-block height-88 width-56 bg-shade-charcoal-2 transform skew-x-12 (group-hover)scale-125 object-cover object-center transition duration-200 ease-in-out filter saturate-6 brightness-2 overflow-hidden",
-              src: image1,
-              alt: "",
-              loading: "lazy",
-            },
+            props: { class: "stack-1 inline-block height-88 width-56 bg-shade-charcoal-2 transform skew-x-12 (group-hover)scale-125 object-cover object-center transition duration-200 ease-in-out filter saturate-6 brightness-2 overflow-hidden", src: image1, alt: "", loading: "lazy" },
           }),
         ],
       }),
@@ -25,9 +16,7 @@ const skewPanel = (number, image1, image2) =>
         html: `<div class="stack-2 absolute top-0 -left-4 height-88 width-32 (group-hover)bg-shade-amber-1 (group-hover)opacity-75 transition duration-200 ease-in-out (group-hover)shadow-lg"></div>`,
         expand: [
           craft("user-avatars", {
-            props: {
-              class: "stack-4 absolute bottom-2 left-2",
-            },
+            props: { class: "stack-4 absolute bottom-2 left-2" },
             html: `
               <img 
                 class="transform skew-x-12 height-10 width-10 bg-shade-charcoal-5 object-cover object-center curve-border-full shadow-dreamy filter saturate-4 brightness-2" 
@@ -38,9 +27,7 @@ const skewPanel = (number, image1, image2) =>
               `,
           }),
           craft("game-controller-icon", {
-            props: {
-              class: "stack-4 absolute bottom-2 right-2",
-            },
+            props: { class: "stack-4 absolute bottom-2 right-2" },
             html: `
               <img 
                 class="stack-3 transform skew-x-12 height-8 width-auto object-fit object-center filter drop-shadow-md invert-1" 

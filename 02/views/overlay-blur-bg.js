@@ -20,13 +20,11 @@ class OverlayBlurBg extends HTMLElement {
     const template = document.createElement("template");
     template.innerHTML = `
       <div class="${this.visibility} stack-5 absolute -top-10 -bottom-10 -left-10 -right-10 filter blur-10">
-
         <img
           class="height-screen width-full object-fit object-center"
           src="${this.url}"
           alt="${this.title}"
         />
-
       </div>
     `;
     this.appendChild(template.content.cloneNode(true));

@@ -10,9 +10,7 @@ const logos = [
 ];
 
 const partnerLogos = () => craft("partner-logos", {
-  props: {
-    class: "padding-6 flex flex-gap-8 flex-wrap flex-center morph fade-in duration-500 delay-2 select-none",
-  },
+  props: { class: "padding-6 flex flex-gap-8 flex-wrap flex-center morph fade-in duration-500 delay-2 select-none" },
   actions: [
     ["addWindow", "load", ()=> {
       logos.forEach((item) => {
